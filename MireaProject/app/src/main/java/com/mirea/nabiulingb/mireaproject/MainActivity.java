@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
 
-        // Определение пунктов меню как верхнего уровня
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_data, R.id.nav_webview)
                 .setOpenableLayout(drawer)
