@@ -1,6 +1,8 @@
 package com.mirea.nabiulingb.mireaproject;
 
 import android.os.Bundle;
+import android.view.MenuItem;
+
 import com.google.android.material.navigation.NavigationView;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView = binding.navView;
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_data, R.id.nav_webview)
+                R.id.nav_home, R.id.nav_data, R.id.nav_webview, R.id.workFragment)
                 .setOpenableLayout(drawer)
                 .build();
 
