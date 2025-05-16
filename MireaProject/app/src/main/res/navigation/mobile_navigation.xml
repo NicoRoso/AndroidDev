@@ -9,24 +9,82 @@
         android:id="@+id/nav_home"
         android:name="com.mirea.nabiulingb.mireaproject.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-    </fragment>
+        tools:layout="@layout/fragment_home"/>
 
     <fragment
         android:id="@+id/nav_data"
         android:name="com.mirea.nabiulingb.mireaproject.DataFragment"
         android:label="Информация"
-        tools:layout="@layout/fragment_data" />
+        tools:layout="@layout/fragment_data"/>
 
     <fragment
         android:id="@+id/nav_webview"
         android:name="com.mirea.nabiulingb.mireaproject.WebViewFragment"
         android:label="Браузер"
-        tools:layout="@layout/fragment_web_view" />
+        tools:layout="@layout/fragment_web_view"/>
 
     <fragment
         android:id="@+id/workFragment"
         android:name="com.mirea.nabiulingb.mireaproject.ui.work.WorkFragment"
         android:label="Фоновая задача"
-        tools:layout="@layout/fragment_work" />
+        tools:layout="@layout/fragment_work"/>
+
+    <fragment
+        android:id="@+id/hardwareFragment"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.hardware.HardwareFragment"
+        android:label="Аппаратные модули"
+        tools:layout="@layout/fragment_hardware">
+
+        <action
+            android:id="@+id/action_hardwareFragment_to_compassFragment"
+            app:destination="@id/compassFragment"/>
+
+        <action
+            android:id="@+id/action_hardwareFragment_to_cameraFragment"
+            app:destination="@id/cameraFragment"/>
+
+        <action
+            android:id="@+id/action_hardwareFragment_to_microphoneFragment"
+            app:destination="@id/microphoneFragment"/>
+
+        <action
+            android:id="@+id/action_hardwareFragment_to_sensorsFragment"
+            app:destination="@id/sensorsFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/compassFragment"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.hardware.CompassFragment"
+        android:label="Компас"
+        tools:layout="@layout/fragment_compass"/>
+
+    <fragment
+        android:id="@+id/cameraFragment"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.hardware.CameraFragment"
+        android:label="Камера"
+        tools:layout="@layout/fragment_camera"/>
+
+    <fragment
+        android:id="@+id/microphoneFragment"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.hardware.MicrophoneFragment"
+        android:label="Микрофон"
+        tools:layout="@layout/fragment_microphone"/>
+
+    <fragment
+        android:id="@+id/sensorsFragment"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.hardware.SensorsFragment"
+        android:label="Датчики"
+        tools:layout="@layout/fragment_sensors"/>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.profile.ProfileFragment"
+        android:label="Профиль"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_files"
+        android:name="com.mirea.nabiulingb.mireaproject.ui.files.FilesFragment"
+        android:label="Работа с файлами"
+        tools:layout="@layout/fragment_files" />
 </navigation>

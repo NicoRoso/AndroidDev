@@ -7,18 +7,35 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="@string/menu_home"/>
+
         <item
             android:id="@+id/nav_data"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="Информация" />
+            android:title="Информация"/>
+
         <item
             android:id="@+id/nav_webview"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="Браузер" />
+            android:title="Браузер"/>
+
         <item
             android:id="@+id/workFragment"
             android:icon="@drawable/ic_baseline_work_24"
-            android:title="Фоновая задача" />
+            android:title="Фоновая задача"/>
+
+        <item
+            android:id="@+id/hardwareFragment"
+            android:icon="@drawable/ic_baseline_work_24"
+            android:title="Аппаратные модули"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile_icon"
+            android:title="Профиль" />
+
+        <item
+            android:id="@+id/nav_files"
+            android:icon="@drawable/ic_file"
+            android:title="Файлы" />
     </group>
 </menu>

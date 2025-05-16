@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/getName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Имя героя" />
+
+    <EditText
+        android:id="@+id/getSuperpower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Суперспособность" />
+
+    <EditText
+        android:id="@+id/getPowerLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Уровень силы"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Добавить" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvHeroes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

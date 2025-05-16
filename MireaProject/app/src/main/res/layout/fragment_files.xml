@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/et_file_content"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:gravity="top"
+        android:hint="Введите текст для работы с файлом"
+        android:inputType="textMultiLine"/>
+
+    <Button
+        android:id="@+id/btn_encrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_file_content"
+        android:layout_marginTop="16dp"
+        android:text="Зашифровать текст"/>
+
+    <Button
+        android:id="@+id/btn_decrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_encrypt"
+        android:layout_marginTop="8dp"
+        android:text="Расшифровать текст"/>
+
+    <Button
+        android:id="@+id/btn_save_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_decrypt"
+        android:layout_marginTop="8dp"
+        android:text="Сохранить в файл"/>
+
+    <Button
+        android:id="@+id/btn_load_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_save_file"
+        android:layout_marginTop="8dp"
+        android:text="Загрузить из файла"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_add"
+        android:contentDescription="Добавить заметку"/>
+
+</RelativeLayout>
