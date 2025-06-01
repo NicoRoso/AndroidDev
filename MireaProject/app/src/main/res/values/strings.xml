@@ -11,4 +11,7 @@
     <string name="menu_gallery">Галерея</string>
     <string name="menu_slideshow">Слайды</string>
     <string name="browser">Браузер</string>
+
+    <string name="menu_network">Сетевые данные</string>
+    <string name="logout">Выйти</string>
 </resources>

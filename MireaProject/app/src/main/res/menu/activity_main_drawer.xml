@@ -37,5 +37,15 @@
             android:id="@+id/nav_files"
             android:icon="@drawable/ic_file"
             android:title="Файлы" />
+
+        <item
+            android:id="@+id/nav_network"
+            android:icon="@drawable/ic_network_icon"
+            android:title="@string/menu_network"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout"/>
     </group>
 </menu>
