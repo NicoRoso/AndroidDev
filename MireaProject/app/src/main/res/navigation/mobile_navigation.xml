@@ -30,6 +30,12 @@
         tools:layout="@layout/fragment_work"/>
 
     <fragment
+        android:id="@+id/playerFragment"
+        android:name="com.mirea.nabiulingb.mireaproject.PlayerFragment"
+        android:label="Плеер"
+        tools:layout="@layout/fragment_player" />
+
+    <fragment
         android:id="@+id/hardwareFragment"
         android:name="com.mirea.nabiulingb.mireaproject.ui.hardware.HardwareFragment"
         android:label="Аппаратные модули"

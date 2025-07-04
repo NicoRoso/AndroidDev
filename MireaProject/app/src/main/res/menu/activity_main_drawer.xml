@@ -25,8 +25,13 @@
             android:title="Фоновая задача"/>
 
         <item
+            android:id="@+id/playerFragment"
+            android:icon="@android:drawable/ic_media_play"
+            android:title="Музыкальный плеер" />
+
+        <item
             android:id="@+id/hardwareFragment"
-            android:icon="@drawable/ic_baseline_work_24"
+            android:icon="@drawable/ic_baseline_work_25"
             android:title="Аппаратные модули"/>
         <item
             android:id="@+id/nav_profile"

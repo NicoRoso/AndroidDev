@@ -50,7 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 R.id.hardwareFragment,
                 R.id.nav_network,
                 R.id.nav_profile,
-                R.id.nav_files
+                R.id.nav_files,
+                R.id.playerFragment
         ).setOpenableLayout(drawer).build();
 
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);

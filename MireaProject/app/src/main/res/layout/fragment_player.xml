@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363C4A"
+    tools:context=".PlayerFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/TextViewPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baka Mitai"
+            android:textColor="#F3E5F5"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="3"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-condensed" />
+
+        <ImageButton
+            android:id="@+id/IButton_Play"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_marginBottom="24dp"
+            android:src="@android:drawable/ic_media_play"
+            android:tint="#81C784"
+            android:scaleType="centerInside"
+            android:contentDescription="Play song" />
+
+        <ImageButton
+            android:id="@+id/IButton_Stop"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@android:drawable/ic_media_pause"
+            android:tint="#E57373"
+            android:scaleType="centerInside"
+            android:contentDescription="Stop song" />
+
+    </LinearLayout>
+</FrameLayout>
